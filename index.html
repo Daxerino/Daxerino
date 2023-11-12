@@ -17,16 +17,21 @@
             color: #4CAF50; /* Change title color to green */
         }
 
+        header {
+            text-align: left;
+        }
+
         label {
             display: block;
             margin-bottom: 8px;
         }
 
         input, select {
-            width: 100%;
+            width: calc(33.33% - 16px);
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
+            display: inline-block;
         }
 
         button {
@@ -44,7 +49,10 @@
 </head>
 <body>
 
-    <h1>Company XYZ Computer Component Order Form</h1>
+    <header>
+        <h1>Company XYZ Computer Component Order Form</h1>
+        <img src="your_logo.png" alt="Company XYZ Logo" width="100">
+    </header>
 
     <form id="orderForm">
         <label for="componentType">Select Component Type:</label>
@@ -52,8 +60,9 @@
             <option value="gpu">GPU</option>
             <option value="cpu">CPU</option>
             <option value="motherboard">Motherboard</option>
-            <option value="SSD">SSD</option>
-            <option value="HDD">HDD</option>
+            <option value="ssd">SSD</option>
+            <option value="hdd">HDD</option>
+            <option value="ram">RAM</option>
             <!-- Add more component types as needed -->
         </select>
 
@@ -80,7 +89,7 @@
             // Perform any additional processing or validation here
 
             // Display the order details (you can customize this part)
-            alert("Order Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
+            alert("Thank you for your order! We will send a quottion to your e-mail address. \nOrder Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
         }
     </script>
 
