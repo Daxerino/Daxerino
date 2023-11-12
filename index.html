@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company XYZ Computer Component Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Company XYZ Computer Component Order Form</h1>
+
+    <form id="orderForm">
+        <label for="componentType">Select Component Type:</label>
+        <select id="componentType" required>
+            <option value="gpu">GPU</option>
+            <option value="cpu">CPU</option>
+            <option value="motherboard">Motherboard</option>
+            <!-- Add more component types as needed -->
+        </select>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" required>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" required>
+
+        <button type="button" onclick="submitOrder()">Submit Order</button>
+    </form>
+
+    <script>
+        function submitOrder() {
+            // Retrieve values from the form
+            var componentType = document.getElementById("componentType").value;
+            var brand = document.getElementById("brand").value;
+            var model = document.getElementById("model").value;
+            var quantity = document.getElementById("quantity").value;
+
+            // Display the order details (you can customize this part)
+            alert("Order Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
+        }
+    </script>
+
+</body>
+</html>
