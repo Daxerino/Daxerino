@@ -8,17 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #404040; /* Change background color to graphite */
+            background-color: #404040; /* Background colour based on company's branding */
             color: white;
-            text-align: center;
+            text-align: left;
         }
 
         h1 {
-            color: #4CAF50; /* Change title color to green */
+            color: rgb(60, 0, 201); /* Colour based on company's branding */
         }
 
         header {
-            text-align: left;
+            text-align: center;
         }
 
         label {
@@ -32,6 +32,7 @@
             margin-bottom: 16px;
             box-sizing: border-box;
             display: inline-block;
+            text-align: left;
         }
 
         button {
@@ -86,10 +87,8 @@
             var model = document.getElementById("model").value;
             var quantity = document.getElementById("quantity").value;
 
-            // Perform any additional processing or validation here
-
-            // Display the order details (you can customize this part)
-            alert("Thank you for your order! We will send a quottion to your e-mail address. \nOrder Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
+            // Display the order details
+            alert("Thank you for your order! We will send a quoation of the selected product to your e-mail address. \nOrder Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
         }
     </script>
 
