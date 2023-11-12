@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company XYZ Computer Component Order Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #404040; /* Change background color to graphite */
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50; /* Change title color to green */
         }
 
         label {
@@ -45,6 +52,8 @@
             <option value="gpu">GPU</option>
             <option value="cpu">CPU</option>
             <option value="motherboard">Motherboard</option>
+            <option value="SSD">SSD</option>
+            <option value="HDD">HDD</option>
             <!-- Add more component types as needed -->
         </select>
 
@@ -67,6 +76,8 @@
             var brand = document.getElementById("brand").value;
             var model = document.getElementById("model").value;
             var quantity = document.getElementById("quantity").value;
+
+            // Perform any additional processing or validation here
 
             // Display the order details (you can customize this part)
             alert("Order Details:\nComponent Type: " + componentType + "\nBrand: " + brand + "\nModel: " + model + "\nQuantity: " + quantity);
